@@ -1,8 +1,6 @@
 const express = require('express');
-const { connect } = require('http2');
 const router = express.Router();
 const { MongoClient } = require('mongodb');
-const { type } = require('os');
 
 const uri = "mongodb+srv://cs120:980708@cluster0.glyxwiq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const client = new MongoClient(uri);
